@@ -6,6 +6,7 @@ use Monolog\Logger;
 use PHPExiftool\Reader;
 use PHPExiftool\Driver\Value\ValueInterface;
 use PHPExiftool\Writer;
+/*
 use PHPExiftool\Driver\Metadata\Metadata;
 use PHPExiftool\Driver\Metadata\MetadataBag;
 use PHPExiftool\Driver\Tag\IPTC\ObjectName;
@@ -14,6 +15,7 @@ use PHPExiftool\Driver\Tag\GPS\GPSLatitude;
 use PHPExiftool\Driver\Tag\GPS\GPSLatitudeRef;
 use PHPExiftool\Driver\Tag\GPS\GPSLongitudeRef;
 use PHPExiftool\Driver\Value\Mono;
+*/
 use FFMpeg\FFMpeg;
 use FFMpeg\FFProbe;
 use FFMpeg\Coordinate\Dimension;

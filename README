@@ -1,0 +1,8 @@
+Una vez descargado el proyecto
+Ejecutar composer install
+
+En el directorio del proyecto correr el comando 
+
+    php -S localhost:8000
+
+Ir a la url http://localhost:8000/convertir.php
