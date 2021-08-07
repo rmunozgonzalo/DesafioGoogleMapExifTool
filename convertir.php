@@ -1,7 +1,7 @@
 <?php
 
 require 'vendor/autoload.php';
-
+include 'enviroment.php';
 use Monolog\Logger;
 use PHPExiftool\Reader;
 use PHPExiftool\Driver\Value\ValueInterface;
@@ -83,7 +83,7 @@ $latAndLon = explode(' ',$gpsLocation);
       #mapa_div { height: 100% }
     </style>
     <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAQXc80hccnzmV-FL-kkgcLABgLTP5NCho">
+      src="http://maps.googleapis.com/maps/api/js?key=<?php echo $key;?>">
     </script>
     <script type="text/javascript">
       function inicializar_mapa() {
