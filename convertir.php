@@ -39,6 +39,17 @@ $video
     ->frame(TimeCode::fromSeconds($secondRand))
     ->save('datos/frame.jpg');
 
+/* Extrear coordenadas */
+$reader = Reader::create($logger);
 
+$metadatas = $reader->files($pathVideo)->first();
+$gpsLocation = '';
+foreach ($metadatas as $metadata) {
+    if($metadata->getTag() == 'Composite:GPSPosition')
+        $gpsLocation = $metadata->getValue()->asString();
+}
 
-    
+$latAndLon = explode(' ',$gpsLocation);
+
+var_dump($latAndLon);
+
