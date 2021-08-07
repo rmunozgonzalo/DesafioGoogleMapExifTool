@@ -1,0 +1,19 @@
+Mini proyecto de evaluación:
+
+Construir un sitio en php que haga lo siguiente:
+
+* Incluir el video mp4 adjunto en algún lugar de tu proyecto.
+
+Programar lo siguiente:
+	* Obtener un fotograma del video en un segundo aleatorio.
+	* Ingresar las coordenadas que incluye el video en la metadata de la imagen.
+	* Presentar en una página un mapa con un punto en las coordenadas de la imagen y al hacer clic en el punto para mostrar la imagen.
+
+Herramientas a utilizar:
+* ffmpeg (https://www.ffmpeg.org)
+* exiftool (https://exiftool.org)
+* api google maps
+
+Subir el proyecto a un repositorio git a tu elección, incluir un Readme.
+Enviar un video de explicación de unos 2 minutos.
+
