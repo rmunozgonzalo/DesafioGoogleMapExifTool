@@ -18,6 +18,7 @@ use FFMpeg\FFMpeg;
 use FFMpeg\FFProbe;
 use FFMpeg\Coordinate\Dimension;
 use FFMpeg\Coordinate\TimeCode;
+
 /* Cargar video y obtener duracion */
 $logger = new Logger('exiftool');
 $pathVideo = 'datos//prueba.mp4';
@@ -71,8 +72,6 @@ foreach ($metadatas as $metadata) {
 }
 $latAndLon = explode(' ',$gpsLocation);
 
-//var_dump($latAndLon);
-
 ?>
 
 <!DOCTYPE html>
@@ -94,15 +93,13 @@ $latAndLon = explode(' ',$gpsLocation);
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
-
-
         var map = new google.maps.Map(document.getElementById("mapa_div"),
             mapOptions);
 
         var marker = new google.maps.Marker({
           position: {lat: <?php echo $latAndLon[0]; ?>, lng: <?php echo $latAndLon[1]; ?>},
           map: map,
-	      title: 'Acuario de Gijón'
+	      title: 'Vista'
         });
         console.log('<?php echo $pathFrame; ?>')
         var contentString = "<img src='<?php echo $pathFrame; ?>' style='width:320px;height:240px'>"
